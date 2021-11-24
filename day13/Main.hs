@@ -1,6 +1,7 @@
 {-# LANGUAGE Strict #-}
 {-# LANGUAGE NoImplicitPrelude #-}
 {-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE OverloadedLabels #-}
 
 module Main where
 
@@ -12,6 +13,10 @@ import Data.Set (Set)
 import Data.Set qualified as S
 import Data.Text (Text)
 import Data.Text qualified as T
+import Data.List.NonEmpty (NonEmpty, nonEmpty)
+import Data.List.NonEmpty qualified as NE
+import Data.Sequence (Seq)
+import Data.Sequence qualified as Seq
 
 import Data.IORef
 import Data.STRef

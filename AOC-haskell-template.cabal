@@ -30,8 +30,11 @@ library
     build-depends:
         base ^>=4.15.0.0,
         Boolean,
+        generic-lens,
+        mtl,
         split,
         these,
+        profunctors,
         random,
         lens,
     hs-source-dirs:   common
@@ -78,12 +81,16 @@ executable day01
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -139,12 +146,16 @@ executable day02
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -200,12 +211,16 @@ executable day03
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -261,12 +276,16 @@ executable day04
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -322,12 +341,16 @@ executable day05
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -383,12 +406,16 @@ executable day06
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -444,12 +471,16 @@ executable day07
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -505,12 +536,16 @@ executable day08
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -566,12 +601,16 @@ executable day09
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -627,12 +666,16 @@ executable day10
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -688,12 +731,16 @@ executable day11
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -749,12 +796,16 @@ executable day12
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -810,12 +861,16 @@ executable day13
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -871,12 +926,16 @@ executable day14
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -932,12 +991,16 @@ executable day15
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -993,12 +1056,16 @@ executable day16
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -1054,12 +1121,16 @@ executable day17
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -1115,12 +1186,16 @@ executable day18
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -1176,12 +1251,16 @@ executable day19
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -1237,12 +1316,16 @@ executable day20
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -1298,12 +1381,16 @@ executable day21
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -1359,12 +1446,16 @@ executable day22
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -1420,12 +1511,16 @@ executable day23
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -1481,12 +1576,16 @@ executable day24
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
@@ -1542,12 +1641,16 @@ executable day25
         FlexibleInstances
         FunctionalDependencies
         GADTs
+        HexFloatLiterals
         ImportQualifiedPost
         InstanceSigs
         KindSignatures
         LambdaCase
+        LexicalNegation
         MultiWayIf
         NamedFieldPuns
+        NumDecimals
+        NumericUnderscores
         OverloadedStrings
         PartialTypeSignatures
         PatternGuards
