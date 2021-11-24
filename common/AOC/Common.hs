@@ -16,6 +16,7 @@ module AOC.Common
   , module Control.Category
   , module Data.Function
   , module Data.List
+  , module Text.Read
   
   , module Prelude
   , module Data.Boolean.Overload
@@ -38,6 +39,7 @@ import Data.Bitraversable
 import Control.Category hiding ((.), id)
 import Data.Function
 import Data.List hiding (uncons)
+import Text.Read
 
 import Prelude hiding ((&&), (||), not)
 import Data.Boolean.Overload ((&&), (||), not)

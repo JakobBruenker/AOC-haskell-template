@@ -40,7 +40,8 @@ executable setup
     main-is:          Main.hs
     build-depends:
         base ^>=4.15.0.0,
-        directory
+        ghc-prim,
+        directory,
     hs-source-dirs:   setup
     default-language: Haskell2010
     
@@ -103,5 +104,1469 @@ executable day1
         text,
 
     hs-source-dirs:   day1
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day2
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day2
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day3
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day3
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day4
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day4
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day5
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day5
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day6
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day6
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day7
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day7
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day8
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day8
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day9
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day9
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day10
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day10
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day11
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day11
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day12
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day12
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day13
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day13
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day14
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day14
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day15
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day15
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day16
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day16
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day17
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day17
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day18
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day18
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day19
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day19
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day20
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day20
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day21
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day21
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day22
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day22
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day23
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day23
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day24
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day24
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+
+
+executable day25
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions:
+        Strict
+    default-extensions:
+        BangPatterns
+        BinaryLiterals
+        BlockArguments
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveDataTypeable
+        DeriveFoldable
+        DeriveFunctor
+        DeriveGeneric
+        DeriveTraversable
+        DerivingVia
+        DoAndIfThenElse
+        EmptyDataDecls
+        ExistentialQuantification
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        ImportQualifiedPost
+        InstanceSigs
+        KindSignatures
+        LambdaCase
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PartialTypeSignatures
+        PatternGuards
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        StandaloneDeriving
+        TupleSections
+        TypeFamilyDependencies
+        TypeSynonymInstances
+        ViewPatterns
+    build-depends:
+        base ^>=4.15.0.0,
+        aoc,
+        attoparsec,
+        vector,
+        containers,
+        lens,
+        text,
+
+    hs-source-dirs:   day25
     default-language: Haskell2010
     ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
