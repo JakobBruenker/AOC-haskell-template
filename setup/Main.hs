@@ -7,19 +7,22 @@
 {-# LANGUAGE MagicHash #-}
 {-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE InstanceSigs #-}
+{-# LANGUAGE MonadComprehensions #-}
+{-# LANGUAGE ViewPatterns #-}
 
 module Main where
 
 import System.Directory (listDirectory, copyFile, createDirectory, doesDirectoryExist, removeDirectoryRecursive)
-import Text.Read (readMaybe)
+import Text.Read (readMaybe, look, Read (readPrec))
 import Data.Maybe (mapMaybe)
 import Data.List (intercalate, stripPrefix, sort)
 import GHC.IO.Handle (hFlush)
 import System.IO (stdout)
 import Data.Foldable (traverse_)
 import Control.Monad ((<=<), forM_, when)
-import GHC.TypeLits
-import Data.Kind
+import GHC.TypeLits (KnownNat, Nat, natVal')
+import Data.Kind (Type)
+import Data.Char (toLower)
 import GHC.Prim (proxy#)
 import GHC.Enum (boundedEnumFrom, boundedEnumFromThen)
 
@@ -42,9 +45,20 @@ instance (KnownNat min, KnownNat max) => Enum (Between min max) where
   enumFromThen = boundedEnumFromThen
 
 newtype Day = MkDay {unDay :: Int}
-  deriving (Bounded, Enum, Eq, Ord, Num, Show, Read) via Between 1 25
+  deriving (Bounded, Enum, Eq, Ord, Num) via Between 1 25
 
--- Copy day 1 to cover all 25 days
+instance Show Day where
+  show (MkDay (show -> intStr)) =
+    replicate (length (show $ unDay maxBound) - length intStr) '0' <> intStr
+
+instance Read Day where
+  readPrec = [ day | str <- look
+                   , length str == length (show $ maxBound @Day)
+                   , day <- MkDay <$> readPrec @Int
+                   , day >= minBound, day <= maxBound
+                   ]
+
+-- | Copy day 1 to cover all 25 days
 main :: IO ()
 main = do
   existing <- existingDays
@@ -57,7 +71,7 @@ main = do
        putStr $ "Should I delete " <> (if plural then "them" else "it") <> "? yes/No "
        hFlush stdout
        response <- getLine
-       if | response == "yes" -> createDirs
+       if | map toLower response `elem` ["y", "yes"] -> createDirs
           | otherwise -> putStrLn "Directories left unchanged."
   where
     createDirs = do

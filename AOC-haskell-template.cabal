@@ -31,6 +31,8 @@ library
         base ^>=4.15.0.0,
         Boolean,
         split,
+        these,
+        random,
         lens,
     hs-source-dirs:   common
     default-language: Haskell2010
@@ -47,7 +49,7 @@ executable setup
     
     ghc-options:      -Wall
 
-executable day1
+executable day01
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
@@ -103,12 +105,12 @@ executable day1
         lens,
         text,
 
-    hs-source-dirs:   day1
+    hs-source-dirs:   day01
     default-language: Haskell2010
     ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
 
 
-executable day2
+executable day02
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
@@ -164,12 +166,12 @@ executable day2
         lens,
         text,
 
-    hs-source-dirs:   day2
+    hs-source-dirs:   day02
     default-language: Haskell2010
     ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
 
 
-executable day3
+executable day03
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
@@ -225,12 +227,12 @@ executable day3
         lens,
         text,
 
-    hs-source-dirs:   day3
+    hs-source-dirs:   day03
     default-language: Haskell2010
     ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
 
 
-executable day4
+executable day04
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
@@ -286,12 +288,12 @@ executable day4
         lens,
         text,
 
-    hs-source-dirs:   day4
+    hs-source-dirs:   day04
     default-language: Haskell2010
     ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
 
 
-executable day5
+executable day05
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
@@ -347,12 +349,12 @@ executable day5
         lens,
         text,
 
-    hs-source-dirs:   day5
+    hs-source-dirs:   day05
     default-language: Haskell2010
     ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
 
 
-executable day6
+executable day06
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
@@ -408,12 +410,12 @@ executable day6
         lens,
         text,
 
-    hs-source-dirs:   day6
+    hs-source-dirs:   day06
     default-language: Haskell2010
     ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
 
 
-executable day7
+executable day07
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
@@ -469,12 +471,12 @@ executable day7
         lens,
         text,
 
-    hs-source-dirs:   day7
+    hs-source-dirs:   day07
     default-language: Haskell2010
     ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
 
 
-executable day8
+executable day08
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
@@ -530,12 +532,12 @@ executable day8
         lens,
         text,
 
-    hs-source-dirs:   day8
+    hs-source-dirs:   day08
     default-language: Haskell2010
     ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
 
 
-executable day9
+executable day09
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
@@ -591,7 +593,7 @@ executable day9
         lens,
         text,
 
-    hs-source-dirs:   day9
+    hs-source-dirs:   day09
     default-language: Haskell2010
     ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
 
