@@ -38,13 +38,3 @@ part1 = const "part1"
 
 part2 :: String -> String
 part2 = const "part2"
-
-whenM :: Monad m => m Bool -> m () -> m ()
-whenM mcond action = do
-  cond <- mcond
-  when cond action
-
-unlessM :: Monad m => m Bool -> m () -> m ()
-unlessM mcond action = do
-  cond <- mcond
-  unless cond action

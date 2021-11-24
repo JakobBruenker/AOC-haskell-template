@@ -79,7 +79,7 @@ main = do
         let path = "day" <> show day
         dayExists <- doesDirectoryExist path
         when dayExists $ removeDirectoryRecursive path
-        copyDirectory "day1" path
+        copyDirectory "day01" path
       putStrLn "Created directories."
 
 copyDirectory :: FilePath -> FilePath -> IO ()

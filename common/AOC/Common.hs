@@ -86,3 +86,13 @@ loeb = moeb fmap
 
 moeb :: (((a -> b) -> b) -> c -> a) -> c -> a
 moeb f x = go where go = f ($ go) x
+
+whenM :: Monad m => m Bool -> m () -> m ()
+whenM mcond action = do
+  cond <- mcond
+  when cond action
+
+unlessM :: Monad m => m Bool -> m () -> m ()
+unlessM mcond action = do
+  cond <- mcond
+  unless cond action
