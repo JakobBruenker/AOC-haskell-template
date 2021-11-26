@@ -31,8 +31,11 @@ library
         base ^>=4.15.0.0,
         Boolean,
         generic-lens,
+        string-interpolate,
         mtl,
+        monad-loops,
         split,
+        text,
         these,
         profunctors,
         random,
@@ -40,7 +43,7 @@ library
     hs-source-dirs:   common
     default-language: Haskell2010
     ghc-options:      -Wall
-    
+
 executable setup
     main-is:          Main.hs
     build-depends:
@@ -49,7 +52,7 @@ executable setup
         directory,
     hs-source-dirs:   setup
     default-language: Haskell2010
-    
+
     ghc-options:      -Wall
 
 executable day01
@@ -114,8 +117,12 @@ executable day01
 
     hs-source-dirs:   day01
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day02
     main-is:          Main.hs
@@ -179,8 +186,12 @@ executable day02
 
     hs-source-dirs:   day02
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day03
     main-is:          Main.hs
@@ -244,8 +255,12 @@ executable day03
 
     hs-source-dirs:   day03
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day04
     main-is:          Main.hs
@@ -309,8 +324,12 @@ executable day04
 
     hs-source-dirs:   day04
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day05
     main-is:          Main.hs
@@ -374,8 +393,12 @@ executable day05
 
     hs-source-dirs:   day05
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day06
     main-is:          Main.hs
@@ -439,8 +462,12 @@ executable day06
 
     hs-source-dirs:   day06
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day07
     main-is:          Main.hs
@@ -504,8 +531,12 @@ executable day07
 
     hs-source-dirs:   day07
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day08
     main-is:          Main.hs
@@ -569,8 +600,12 @@ executable day08
 
     hs-source-dirs:   day08
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day09
     main-is:          Main.hs
@@ -634,8 +669,12 @@ executable day09
 
     hs-source-dirs:   day09
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day10
     main-is:          Main.hs
@@ -699,8 +738,12 @@ executable day10
 
     hs-source-dirs:   day10
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day11
     main-is:          Main.hs
@@ -764,8 +807,12 @@ executable day11
 
     hs-source-dirs:   day11
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day12
     main-is:          Main.hs
@@ -829,8 +876,12 @@ executable day12
 
     hs-source-dirs:   day12
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day13
     main-is:          Main.hs
@@ -894,8 +945,12 @@ executable day13
 
     hs-source-dirs:   day13
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day14
     main-is:          Main.hs
@@ -959,8 +1014,12 @@ executable day14
 
     hs-source-dirs:   day14
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day15
     main-is:          Main.hs
@@ -1024,8 +1083,12 @@ executable day15
 
     hs-source-dirs:   day15
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day16
     main-is:          Main.hs
@@ -1089,8 +1152,12 @@ executable day16
 
     hs-source-dirs:   day16
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day17
     main-is:          Main.hs
@@ -1154,8 +1221,12 @@ executable day17
 
     hs-source-dirs:   day17
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day18
     main-is:          Main.hs
@@ -1219,8 +1290,12 @@ executable day18
 
     hs-source-dirs:   day18
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day19
     main-is:          Main.hs
@@ -1284,8 +1359,12 @@ executable day19
 
     hs-source-dirs:   day19
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day20
     main-is:          Main.hs
@@ -1349,8 +1428,12 @@ executable day20
 
     hs-source-dirs:   day20
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day21
     main-is:          Main.hs
@@ -1414,8 +1497,12 @@ executable day21
 
     hs-source-dirs:   day21
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day22
     main-is:          Main.hs
@@ -1479,8 +1566,12 @@ executable day22
 
     hs-source-dirs:   day22
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day23
     main-is:          Main.hs
@@ -1544,8 +1635,12 @@ executable day23
 
     hs-source-dirs:   day23
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day24
     main-is:          Main.hs
@@ -1609,8 +1704,12 @@ executable day24
 
     hs-source-dirs:   day24
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
-
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables
 
 executable day25
     main-is:          Main.hs
@@ -1674,4 +1773,9 @@ executable day25
 
     hs-source-dirs:   day25
     default-language: Haskell2010
-    ghc-options:      -Wall -Wno-unused-imports -fdefer-type-errors -fdefer-out-of-scope-variables
+    ghc-options:      -Wall
+                      -Wno-unused-imports
+                      -Wno-type-defaults
+                      -Wno-missing-signatures
+                      -fdefer-type-errors
+                      -fdefer-out-of-scope-variables

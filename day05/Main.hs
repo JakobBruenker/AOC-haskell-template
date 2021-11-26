@@ -1,7 +1,9 @@
 {-# LANGUAGE Strict #-}
 {-# LANGUAGE NoImplicitPrelude #-}
 {-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE QuasiQuotes #-}
 {-# LANGUAGE OverloadedLabels #-}
+{-# LANGUAGE TypeApplications #-}
 
 module Main where
 
@@ -13,7 +15,7 @@ import Data.Set (Set)
 import Data.Set qualified as S
 import Data.Text (Text)
 import Data.Text qualified as T
-import Data.List.NonEmpty (NonEmpty, nonEmpty)
+import Data.List.NonEmpty (NonEmpty(..), nonEmpty)
 import Data.List.NonEmpty qualified as NE
 import Data.Sequence (Seq)
 import Data.Sequence qualified as Seq
@@ -25,21 +27,23 @@ import Data.Vector qualified as V
 import Data.Vector.Mutable (IOVector, STVector)
 import Data.Vector.Mutable qualified as V
 
-import Data.Attoparsec.Text as P
+import Data.Attoparsec.Text qualified as P
 
 {-# ANN module ("HLint: ignore Redundant multi-way if" :: String) #-}
 
 main :: IO ()
 main = do
-  putStrLn "\nPart 1:"
-  putStrLn $ part1 input
-  putStrLn $ "\n" <> replicate 80 '-'
-  putStrLn "\nPart 2:"
-  putStrLn $ part2 input
-  putStrLn ""
+  input <- readInput Nothing
+  putStrLn [i|
+Part 1:
+#{display $ part1 input}
 
-part1 :: String -> String
-part1 = const "part1"
+#{replicate 80 '-'}
 
-part2 :: String -> String
-part2 = const "part2"
+Part 2:
+#{display $ part2 input}
+|]
+
+part1 = const @String "part1"
+
+part2 = const @String "part2"
